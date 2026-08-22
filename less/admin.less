@@ -1,0 +1,196 @@
+.RssFeedSettings {
+  border-bottom: 1px solid var(--control-bg);
+  margin-bottom: 24px;
+  padding-bottom: 18px;
+}
+
+.RssFeedTable {
+  width: 100%; // 设置表格宽度为 100%
+
+  table-layout: fixed;
+
+  td {
+    border-bottom:none;
+  }
+  th, td {
+    text-align: center; // 让表头和表格内容居中
+    padding: 10px; // 增加一些填充，让表格看起来更美观
+    .Checkbox {padding: 0;}
+  }
+
+  td.status {
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center;
+  }
+
+  td.user {
+    text-align: center;
+    width: 86px;
+  }
+
+  th {
+    font-weight: bold; // 让表头加粗
+  }
+
+  td input {
+    width: 90%; // 让输入框占用单元格的大部分空间
+    text-align: center; // 让输入框内的文字居中
+  }
+
+  .Checkbox--switch {
+    --left-pad:0;
+    --right-pad:0;
+    padding-left: 0; /* 移除 padding-left 以避免对齐问题 */
+  }
+}
+
+.RssFeedActions {
+  align-items: center;
+  display: inline-flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.RssFeedUserBinding {
+  display: inline-flex;
+  height: 40px;
+  justify-content: center;
+  position: relative;
+  vertical-align: middle;
+  width: 40px;
+}
+
+.RssFeedUserAvatarButton,
+.RssFeedUserAddButton,
+.RssFeedUserRemoveButton {
+  align-items: center;
+  border: 0;
+  display: inline-flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.RssFeedUserAvatarButton,
+.RssFeedUserAddButton {
+  background: var(--control-bg);
+  border-radius: 50%;
+  color: var(--muted-color);
+  cursor: pointer;
+  height: 38px;
+  width: 38px;
+
+  &:hover,
+  &:focus {
+    background: var(--button-bg-hover);
+    color: var(--link-color);
+  }
+
+  &:disabled {
+    cursor: default;
+    opacity: .65;
+  }
+}
+
+.RssFeedPreviewModal-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.RssFeedPreviewModal-item {
+  align-items: flex-start;
+  border-bottom: 1px solid var(--control-bg);
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  padding: 0 0 12px;
+
+  &:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+}
+
+.RssFeedPreviewModal-itemMain {
+  min-width: 0;
+
+  h4 {
+    font-size: 15px;
+    line-height: 1.45;
+    margin: 0 0 4px;
+  }
+
+  time {
+    color: var(--muted-color);
+    display: block;
+    font-size: 12px;
+    margin-bottom: 6px;
+  }
+
+  p {
+    color: var(--muted-color);
+    line-height: 1.6;
+    margin: 0;
+  }
+}
+
+.RssFeedPreviewModal-error {
+  color: var(--error-color, #d83e3e);
+}
+
+.RssFeedPreviewModal-errorDetail {
+  background: var(--control-bg);
+  border-radius: var(--border-radius);
+  color: var(--muted-color);
+  max-height: 180px;
+  overflow: auto;
+  padding: 12px;
+  white-space: pre-wrap;
+}
+
+.RssFeedUserAvatarButton {
+  background: transparent;
+
+  &:hover,
+  &:focus {
+    background: transparent;
+  }
+}
+
+.RssFeedUserAvatar {
+  height: 38px;
+  line-height: 38px;
+  width: 38px;
+}
+
+.RssFeedUserAddButton {
+  font-size: 14px;
+}
+
+.RssFeedUserRemoveButton {
+  background: var(--body-bg);
+  border: 1px solid var(--control-bg);
+  border-radius: 50%;
+  color: var(--muted-color);
+  cursor: pointer;
+  font-size: 10px;
+  height: 18px;
+  line-height: 18px;
+  position: absolute;
+  right: -3px;
+  top: -3px;
+  width: 18px;
+
+  &:hover,
+  &:focus {
+    background: var(--error-bg, #fde8e8);
+    border-color: var(--error-color, #d83e3e);
+    color: var(--error-color, #d83e3e);
+  }
+
+  &:disabled {
+    cursor: default;
+    opacity: .65;
+  }
+}
