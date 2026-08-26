@@ -1,0 +1,49 @@
+{
+    "name": "stezkoy/flarum-feeds",
+    "description": "A Flarum extension that aggregates and displays RSS/Atom feeds.",
+    "version": "4.0.4",
+    "keywords": [
+        "flarum",
+        "rss",
+        "atom",
+        "feeds"
+    ],
+    "type": "flarum-extension",
+    "license": "MIT",
+    "require": {
+        "php": "^8.3",
+        "flarum/core": "^2.0",
+        "php-feed-io/feed-io": "^6.4",
+        "guzzlehttp/guzzle": "^7.9"
+    },
+    "authors": [
+        {
+            "name": "Stezkoy",
+            "email": "stezko@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Stezkoy\\Rss\\": "src/"
+        }
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "Feeds",
+            "category": "feature",
+            "icon": {
+                "name": "fas fa-rss",
+                "color": "#fff",
+                "backgroundColor": "#f26522"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
+    }
+}
