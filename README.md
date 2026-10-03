@@ -2,13 +2,19 @@
 
 > **Read-only archive of released versions of stezkoy/flarum-feeds.** Not for installation: use [Packagist](https://packagist.org/packages/stezkoy/flarum-feeds) or the [upstream repository](https://github.com/Stezkoy/flarum-feeds).
 
-**0** versions archived · Latest: [`4.0.4`](https://github.com/flarchive/stezkoy-flarum-feeds/tree/archive/v4.0.4) · License: `MIT` · Flarum: `^2.0`
+**7** versions archived · Latest: [`4.0.4`](https://github.com/flarchive/stezkoy-flarum-feeds/tree/archive/v4.0.4) · License: `MIT` · Flarum: `^2.0`
 
 ## Archived Versions
 
 | Version | Released | Flarum | Source |
 |---|---|---|---|
-| — | — | — | — |
+| `3.1.0` | 2026-08-22 | `^2.0` | [Browse](https://github.com/flarchive/stezkoy-flarum-feeds/tree/archive/v3.1.0) |
+| `3.1.1` | 2026-08-22 | `^2.0` | [Browse](https://github.com/flarchive/stezkoy-flarum-feeds/tree/archive/v3.1.1) |
+| `4.0.0` | 2026-08-22 | `^2.0` | [Browse](https://github.com/flarchive/stezkoy-flarum-feeds/tree/archive/v4.0.0) |
+| `4.0.1` | 2026-08-22 | `^2.0` | [Browse](https://github.com/flarchive/stezkoy-flarum-feeds/tree/archive/v4.0.1) |
+| `4.0.2` | 2026-08-22 | `^2.0` | [Browse](https://github.com/flarchive/stezkoy-flarum-feeds/tree/archive/v4.0.2) |
+| `4.0.3` | 2026-08-22 | `^2.0` | [Browse](https://github.com/flarchive/stezkoy-flarum-feeds/tree/archive/v4.0.3) |
+| `4.0.4` | 2026-08-26 | `^2.0` | [Browse](https://github.com/flarchive/stezkoy-flarum-feeds/tree/archive/v4.0.4) |
 
 Catalog entry: [packages/stezkoy-flarum-feeds.json](https://github.com/flarchive/archive-index/blob/main/packages/stezkoy-flarum-feeds.json)
 
